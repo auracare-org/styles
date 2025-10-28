@@ -1,0 +1,49 @@
+/**
+ * Color Design Tokens
+ * Single Responsibility: Defines all color-related design tokens
+ */
+
+:root {
+	/* Button Background Colors - Primary */
+	--color-bg-button-primary-default: #2f4ec0;
+	--color-bg-button-primary-hover: #5971cd;
+	--color-bg-button-primary-active: #23398c;
+	--color-bg-button-primary-disabled: #ced4da;
+
+	/* Button Background Colors - Secondary */
+	--color-bg-button-secondary-default: #d5dcf2;
+	--color-bg-button-secondary-hover: #acb8e6;
+	--color-bg-button-secondary-active: #8295d9;
+	--color-bg-button-secondary-disabled: #ced4da;
+
+	/* Surface Background Colors */
+	--color-bg-surface-default: #fafafa;
+	--color-bg-surface-raised: #ffffff;
+	--color-bg-surface-scrim: #000b3473;
+
+	/* Button Text Colors - Primary */
+	--color-text-button-primary-default: #ffffff;
+	--color-text-button-primary-hover: #5971cd;
+	--color-text-button-primary-active: #23398c;
+	--color-text-button-primary-disabled: #828c95;
+
+	/* Button Text Colors - Secondary */
+	--color-text-button-secondary-default: #2f4ec0;
+	--color-text-button-secondary-hover: #acb8e6;
+	--color-text-button-secondary-active: #1f337e;
+	--color-text-button-secondary-disabled: #ced4da;
+
+	/* Header Text Colors */
+	--color-text-header-primary: #2f4ec0;
+	--color-text-header-secondary: #212529;
+
+	/* Body Text Colors */
+	--color-text-body-primary: #343a40;
+	--color-text-body-secondary: #6c757d;
+
+	/* Border Colors */
+	--color-border-default: #dee2e6;
+	--color-border-hover: #acb8e6;
+	--color-border-focus: #2f4ec0;
+	--color-border-error: #ef4444;
+}

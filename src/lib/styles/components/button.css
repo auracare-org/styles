@@ -1,0 +1,88 @@
+/**
+ * Button Component Styles
+ * Open/Closed Principle: Extensible through CSS variables without modification
+ */
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--spacing-xs);
+	padding: var(--spacing-s) var(--spacing-lg);
+	border: none;
+	border-radius: 6px;
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.5;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	user-select: none;
+}
+
+.button:focus-visible {
+	outline: 2px solid var(--color-border-focus);
+	outline-offset: 2px;
+}
+
+/* Primary Variant */
+.button--primary {
+	background-color: var(--color-bg-button-primary-default);
+	color: var(--color-text-button-primary-default);
+}
+
+.button--primary:hover:not(:disabled) {
+	background-color: var(--color-bg-button-primary-hover);
+}
+
+.button--primary:active:not(:disabled) {
+	background-color: var(--color-bg-button-primary-active);
+}
+
+.button--primary:disabled {
+	background-color: var(--color-bg-button-primary-disabled);
+	color: var(--color-text-button-primary-disabled);
+	cursor: not-allowed;
+}
+
+/* Secondary Variant */
+.button--secondary {
+	background-color: var(--color-bg-button-secondary-default);
+	color: var(--color-text-button-secondary-default);
+}
+
+.button--secondary:hover:not(:disabled) {
+	background-color: var(--color-bg-button-secondary-hover);
+}
+
+.button--secondary:active:not(:disabled) {
+	background-color: var(--color-bg-button-secondary-active);
+	color: var(--color-text-button-secondary-active);
+}
+
+.button--secondary:disabled {
+	background-color: var(--color-bg-button-secondary-disabled);
+	color: var(--color-text-button-secondary-disabled);
+	cursor: not-allowed;
+}
+
+/* Size Variants */
+.button--small {
+	padding: var(--spacing-xs) var(--spacing-md);
+	font-size: 12px;
+}
+
+.button--medium {
+	padding: var(--spacing-s) var(--spacing-lg);
+	font-size: 14px;
+}
+
+.button--large {
+	padding: var(--spacing-md) var(--spacing-xl);
+	font-size: 16px;
+}
+
+/* Full Width */
+.button--full-width {
+	width: 100%;
+}

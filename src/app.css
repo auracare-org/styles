@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+/* Design Tokens */
+@import './lib/styles/tokens/index.css';

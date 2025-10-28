@@ -1,0 +1,15 @@
+/**
+ * Spacing Design Tokens
+ * Single Responsibility: Defines all spacing-related design tokens
+ */
+
+:root {
+	--spacing-xxs: 4px;
+	--spacing-xs: 8px;
+	--spacing-s: 12px;
+	--spacing-md: 16px;
+	--spacing-lg: 24px;
+	--spacing-xl: 32px;
+	--spacing-xxl: 40px;
+	--spacing-xxxl: 48px;
+}
