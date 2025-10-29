@@ -1,6 +1,6 @@
 /**
  * Spacing Design Tokens
- * Single Responsibility: Defines all spacing-related design tokens
+ * Generated from import.json — do not edit manually
  */
 
 :root {
@@ -13,3 +13,4 @@
 	--spacing-xxl: 40px;
 	--spacing-xxxl: 48px;
 }
+

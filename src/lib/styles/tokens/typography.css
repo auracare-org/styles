@@ -1,0 +1,134 @@
+/**
+ * Typography Design Tokens
+ * Generated from import.json — do not edit manually
+ */
+
+:root {
+	--font-family-poppins: Poppins;
+
+	--font-weight-poppins-0: 700;
+	--font-weight-poppins-1: 500;
+	--font-weight-poppins-2: 400;
+	--font-weight-poppins-3: 600;
+
+	--font-size-0: 14px;
+	--font-size-1: 16px;
+	--font-size-2: 18px;
+	--font-size-3: 28px;
+	--font-size-4: 40px;
+	--font-size-5: 48px;
+	--font-size-6: 60px;
+
+	--line-height-0: 72px;
+	--line-height-1: 64px;
+	--line-height-2: 48px;
+	--line-height-3: 40px;
+	--line-height-4: 28px;
+	--line-height-5: 28px;
+	--line-height-6: 24px;
+	--line-height-7: 24px;
+	--line-height-8: 24px;
+
+	--letter-spacing-0: 0.75%;
+	--letter-spacing-1: 0;
+
+	--paragraph-spacing-0: 0px;
+
+	--paragraph-indent-0: 0px;
+
+	--text-case-none: none;
+
+	--text-decoration-none: none;
+
+	--typography-heading-1-font-family: var(--font-family-poppins);
+	--typography-heading-1-font-weight: var(--font-weight-poppins-0);
+	--typography-heading-1-line-height: var(--line-height-0);
+	--typography-heading-1-font-size: var(--font-size-6);
+	--typography-heading-1-letter-spacing: var(--letter-spacing-0);
+	--typography-heading-1-paragraph-spacing: var(--paragraph-spacing-0);
+	--typography-heading-1-paragraph-indent: var(--paragraph-indent-0);
+	--typography-heading-1-text-case: var(--text-case-none);
+	--typography-heading-1-text-decoration: var(--text-decoration-none);
+
+	--typography-heading-2-font-family: var(--font-family-poppins);
+	--typography-heading-2-font-weight: var(--font-weight-poppins-0);
+	--typography-heading-2-line-height: var(--line-height-1);
+	--typography-heading-2-font-size: var(--font-size-5);
+	--typography-heading-2-letter-spacing: var(--letter-spacing-1);
+	--typography-heading-2-paragraph-spacing: var(--paragraph-spacing-0);
+	--typography-heading-2-paragraph-indent: var(--paragraph-indent-0);
+	--typography-heading-2-text-case: var(--text-case-none);
+	--typography-heading-2-text-decoration: var(--text-decoration-none);
+
+	--typography-heading-3-font-family: var(--font-family-poppins);
+	--typography-heading-3-font-weight: var(--font-weight-poppins-1);
+	--typography-heading-3-line-height: var(--line-height-2);
+	--typography-heading-3-font-size: var(--font-size-4);
+	--typography-heading-3-letter-spacing: var(--letter-spacing-1);
+	--typography-heading-3-paragraph-spacing: var(--paragraph-spacing-0);
+	--typography-heading-3-paragraph-indent: var(--paragraph-indent-0);
+	--typography-heading-3-text-case: var(--text-case-none);
+	--typography-heading-3-text-decoration: var(--text-decoration-none);
+
+	--typography-heading-4-font-family: var(--font-family-poppins);
+	--typography-heading-4-font-weight: var(--font-weight-poppins-2);
+	--typography-heading-4-line-height: var(--line-height-3);
+	--typography-heading-4-font-size: var(--font-size-3);
+	--typography-heading-4-letter-spacing: var(--letter-spacing-1);
+	--typography-heading-4-paragraph-spacing: var(--paragraph-spacing-0);
+	--typography-heading-4-paragraph-indent: var(--paragraph-indent-0);
+	--typography-heading-4-text-case: var(--text-case-none);
+	--typography-heading-4-text-decoration: var(--text-decoration-none);
+
+	--typography-body-1-semibold-font-family: var(--font-family-poppins);
+	--typography-body-1-semibold-font-weight: var(--font-weight-poppins-0);
+	--typography-body-1-semibold-line-height: var(--line-height-4);
+	--typography-body-1-semibold-font-size: var(--font-size-2);
+	--typography-body-1-semibold-letter-spacing: var(--letter-spacing-1);
+	--typography-body-1-semibold-paragraph-spacing: var(--paragraph-spacing-0);
+	--typography-body-1-semibold-paragraph-indent: var(--paragraph-indent-0);
+	--typography-body-1-semibold-text-case: var(--text-case-none);
+	--typography-body-1-semibold-text-decoration: var(--text-decoration-none);
+
+	--typography-body-1-regular-font-family: var(--font-family-poppins);
+	--typography-body-1-regular-font-weight: var(--font-weight-poppins-1);
+	--typography-body-1-regular-line-height: var(--line-height-4);
+	--typography-body-1-regular-font-size: var(--font-size-2);
+	--typography-body-1-regular-letter-spacing: var(--letter-spacing-1);
+	--typography-body-1-regular-paragraph-spacing: var(--paragraph-spacing-0);
+	--typography-body-1-regular-paragraph-indent: var(--paragraph-indent-0);
+	--typography-body-1-regular-text-case: var(--text-case-none);
+	--typography-body-1-regular-text-decoration: var(--text-decoration-none);
+
+	--typography-body-2-semibold-font-family: var(--font-family-poppins);
+	--typography-body-2-semibold-font-weight: var(--font-weight-poppins-3);
+	--typography-body-2-semibold-line-height: var(--line-height-6);
+	--typography-body-2-semibold-font-size: var(--font-size-1);
+	--typography-body-2-semibold-letter-spacing: var(--letter-spacing-1);
+	--typography-body-2-semibold-paragraph-spacing: var(--paragraph-spacing-0);
+	--typography-body-2-semibold-paragraph-indent: var(--paragraph-indent-0);
+	--typography-body-2-semibold-text-case: var(--text-case-none);
+	--typography-body-2-semibold-text-decoration: var(--text-decoration-none);
+
+	--typography-body-2-regular-font-family: var(--font-family-poppins);
+	--typography-body-2-regular-font-weight: var(--font-weight-poppins-1);
+	--typography-body-2-regular-line-height: var(--line-height-6);
+	--typography-body-2-regular-font-size: var(--font-size-1);
+	--typography-body-2-regular-letter-spacing: var(--letter-spacing-1);
+	--typography-body-2-regular-paragraph-spacing: var(--paragraph-spacing-0);
+	--typography-body-2-regular-paragraph-indent: var(--paragraph-indent-0);
+	--typography-body-2-regular-text-case: var(--text-case-none);
+	--typography-body-2-regular-text-decoration: var(--text-decoration-none);
+
+	--typography-body-3-font-family: var(--font-family-poppins);
+	--typography-body-3-font-weight: var(--font-weight-poppins-1);
+	--typography-body-3-line-height: var(--line-height-6);
+	--typography-body-3-font-size: var(--font-size-0);
+	--typography-body-3-letter-spacing: var(--letter-spacing-1);
+	--typography-body-3-paragraph-spacing: var(--paragraph-spacing-0);
+	--typography-body-3-paragraph-indent: var(--paragraph-indent-0);
+	--typography-body-3-text-case: var(--text-case-none);
+	--typography-body-3-text-decoration: var(--text-decoration-none);
+
+}
+

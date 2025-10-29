@@ -4,7 +4,10 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
+		"tokens:build": "node scripts/build-tokens.mjs",
+		"predev": "yarn tokens:build",
 		"dev": "vite dev",
+		"prebuild": "yarn tokens:build",
 		"build": "vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
@@ -14,7 +17,8 @@
 		"lint": "prettier --check .",
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run && npm run test:e2e",
-		"test:e2e": "playwright test"
+		"test:e2e": "playwright test",
+		"package:lib": "svelte-kit package"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.55.1",

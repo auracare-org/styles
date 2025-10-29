@@ -1,0 +1,8 @@
+$ node scripts/build-tokens.mjs
+✅ Tokens built to src/lib/styles/tokens
+3:27:39 PM [vite] (client) Forced re-optimization of dependencies
+
+  VITE v7.1.12  ready in 1365 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose

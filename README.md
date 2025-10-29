@@ -64,8 +64,11 @@ src/
 
 Design tokens are defined as CSS custom properties in `src/lib/styles/tokens/`:
 
-- **Colors**: Button backgrounds, text colors, borders, surfaces
-- **Spacing**: Consistent spacing scale from `xxs` (4px) to `xxxl` (48px)
+- Colors: Button backgrounds, text colors, borders, surfaces
+- Spacing: Consistent spacing scale from `xxs` (4px) to `xxxl` (48px)
+- Typography: Font families, weights, sizes, line heights, etc.
+
+Tokens are generated from `import.json` (Figma Tokens export) using a build script. See "Token Sync" below.
 
 ## Components
 
@@ -137,6 +140,20 @@ yarn dev --open
 
 Visit http://localhost:5173 to view the component demo.
 
+### Token Sync
+
+This repo syncs design tokens from `import.json` into CSS variables used by components.
+
+- Build tokens once:
+
+```sh
+yarn tokens:build
+```
+
+- Tokens are also generated automatically before `dev` and `build`.
+- Generated files live in `src/lib/styles/tokens/`:
+  - `colors.css`, `spacing.css`, `typography.css` and the aggregator `index.css`
+
 ### Building
 
 Create a production build:
@@ -184,7 +201,54 @@ yarn test:e2e
 
 ### Adding New Design Tokens
 
-1. Add tokens to appropriate file in `src/lib/styles/tokens/`
-2. Use CSS custom properties format: `--prefix-category-name: value;`
+This project expects tokens to be changed in `import.json` (Figma Tokens export), then built into CSS.
+
+1. Update `import.json` with new tokens (colors, spacing, typography, etc.)
+2. Run `yarn tokens:build` to regenerate CSS files
 3. Reference tokens in component styles using `var(--token-name)`
 
+Examples:
+
+- Colors: `var(--color-bg-button-primary-default)`
+- Spacing: `var(--spacing-md)`
+- Typography: `var(--font-size-2)`, `var(--line-height-2)`, or composite vars like `var(--typography-heading-2-font-size)`
+
+## Packaging for Reuse
+
+Build a distributable package of `src/lib` (components + tokens):
+
+```sh
+yarn package:lib
+```
+
+This produces a `package/` directory you can publish or consume locally.
+
+### Consuming in another Svelte app
+
+- Install your package (after publishing or via a file path):
+
+```sh
+yarn add <your-package-name>
+```
+
+- Import tokens globally (one of):
+
+```ts
+// Option 1: side-effect module import
+import '<your-package-name>/styles/tokens';
+
+// Option 2: CSS import in your app.css
+@import '<your-package-name>/styles/tokens/index.css';
+```
+
+- Use components:
+
+```svelte
+<script>
+  import { Button, Surface } from '<your-package-name>';
+</script>
+
+<Button variant="primary">Click</Button>
+```
+
+Note: Deep import paths may vary depending on your package manager and bundler configuration. The side-effect module `styles/tokens` is provided to simplify token inclusion.
