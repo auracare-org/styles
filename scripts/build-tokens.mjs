@@ -90,8 +90,8 @@ function buildColors(tokens) {
     ':root {'
   ];
 
-  // bg, text, border
-  const sections = ['bg', 'text', 'border'];
+  // bg, text, border, icons
+  const sections = ['bg', 'text', 'border', 'icons'];
   for (const section of sections) {
     const sec = tokens[section];
     if (!sec) continue;
@@ -130,6 +130,17 @@ function buildSpacing(tokens) {
     for (const [key, v] of Object.entries(sp)) {
       if (v && typeof v === 'object' && '$value' in v) {
         lines.push(line(`--spacing-${key}`, valueToCss(v.$value)));
+      }
+    }
+  }
+  lines.push('');
+
+  // Border radius tokens
+  const br = tokens['border radius'];
+  if (br && typeof br === 'object') {
+    for (const [key, v] of Object.entries(br)) {
+      if (v && typeof v === 'object' && '$value' in v) {
+        lines.push(line(`--border-radius-${key}`, valueToCss(v.$value)));
       }
     }
   }

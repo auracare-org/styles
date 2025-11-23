@@ -12,5 +12,14 @@
 	--spacing-xl: 32px;
 	--spacing-xxl: 40px;
 	--spacing-xxxl: 48px;
+
+	--border-radius-xxs: 4px;
+	--border-radius-xs: 8px;
+	--border-radius-s: 12px;
+	--border-radius-md: 16px;
+	--border-radius-lg: 24px;
+	--border-radius-xl: 32px;
+	--border-radius-xxl: 40px;
+	--border-radius-xxxl: 48px;
 }
 
